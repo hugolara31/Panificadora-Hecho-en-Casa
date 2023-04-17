@@ -1,0 +1,23 @@
+*{background: pink;
+margin: 0%;}
+
+h1{background: grey;
+text-align: center;
+width: 100%;
+}
+div{margin:35px;
+    padding:35px;
+    width:1200px;
+line-height: 50px;
+border: black solid;
+display:inline-block;
+text-align: center;
+font-size: 25px;
+justify-content:right;}
+
+
+    li{display: inline-block;}
+
+form input{font-size: 13px;
+text-align: center;
+width: 100px;}

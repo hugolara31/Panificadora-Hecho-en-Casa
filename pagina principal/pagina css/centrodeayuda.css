@@ -1,0 +1,16 @@
+*{margin: 0;
+padding: 0;
+background: pink;}
+
+h1{font-size: 30px;
+text-align: center;
+margin: 5px;}
+.caja{text-align: center;
+    padding-top:15px ;}
+
+    details summary{padding-top: 20px;
+    font-size: 20px;}
+  .pp{padding-right: 50%;
+width: 50%;
+padding-left: 310px;
+padding-top:10px;}
