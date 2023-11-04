@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vebo</title>
+    <meta name="author"; content="Hugo Lara">
+    <meta name="description"; content="mi primera pagina">
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="shortcut icon" href="favicon.ico.png" type="image/x-icon">
+    <style>
+        body {
+    font-family: "Lucida Console", "Courier New", monospace;
+    background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #04AA6D;
+}
+
+h1 {
+    background-color: black;
+    padding: 10px;
+    margin: 0;
+    color: #92a4ff;
+}
+
+input[type=text],
+input[type=email],
+textarea,
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+div.contenedor-formulario {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+.footer {
+    background-color: #333;
+    color: #FFF;
+    padding: 10px;
+    text-align: center;
+    clear: both;
+}
+</style>
+</head>
+<body>
+    <header>
+        <h1>VEBO</h1>
+        <nav>
+        
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="tabladetalles.html">Tabla de talles</a></li>
+                <li><a href="productos.html">productos</a></li>
+                <li><a class="active" href="formulario.html">formulario</a></li>
+            </ul>
+        
+        </nav>
+    </header>
+
+    <div class="contenedor-formulario">
+        <form >
+            <label for="Nombre"> Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="escrbe tu nombre" required minlength="4">
+            <label for="apellido"> Apellido:</label>
+            <input type="text" id="apellido" name="apellido" placeholder="escrbe tu apellido" required minlength="3">
+            <label for="mail"> Email:</label>
+            <input type="email" name="mail" id="mail" placeholder="escribe tu email" required>
+            <label for="pais">pais</label>
+            <select name="pais" id="pais">
+                <optgroup>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Bolvia" selected="selected">Bolivia</option>
+                    <option value="Uruguay">Uruguay</option>
+                </optgroup>
+                <optgroup>
+                    <option value="Mexico">Mexico</option>
+                    <option value="Estados Unidos">Estados Unidos</option>
+                    <option value="Canada">Canada</option>
+                </optgroup>
+            </select>
+            <label for="cometario"> escrbe t opinion</label>
+            <textarea name="comentario" id="comentario" placeholder="escribe tu opinion"></textarea>
+            <label for="moivo"> motivo de contacto</label>
+            <input type="radio" name="motivo" id="motivo">me encanta la marca
+            <input type="radio" name="motivo" id="motivo">reclamo
+            <input type="radio" name="motivo" id="motivo">comercalizar la marca
+            <input type="radio" name="motivo" id="motivo">quero hacerme socio
+
+
+            <input type="submit" value="enviar">
+        </form>
+    </div>
+
+    
+
+    <footer class="footer"> 
+        <p>Derechos Reservados &copy; 2023</p> 
+    </footer>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
