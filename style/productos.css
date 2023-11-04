@@ -1,0 +1,23 @@
+.centrado{
+    display: flex;
+    justify-content: center;
+
+}
+.gallery{
+    margin: 5px;
+    border: 1px solid rgb(199, 197, 197);
+    float: left;
+    width: 33vw;
+}
+div.gallery{
+    width: auto;
+    height: auto;
+}
+.desc{
+    padding: 15px;
+    text-align: center;
+}
+a{
+    height: max-content;
+    width: max-content;
+}
